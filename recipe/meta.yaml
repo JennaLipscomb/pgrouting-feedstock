@@ -34,7 +34,7 @@ requirements:
     - postgresql
     - postgis
   run:
-    - {{ pin_compatible('cgal', exact=True) }}
+    - cgal
     - postgis
     - postgresql
     - sphinx
