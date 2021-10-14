@@ -36,6 +36,8 @@ requirements:
     - {{ pin_compatible('cgal', exact=True) }}
     - postgis
     - postgresql
+    - sphinx
+    - sphinx_bootstrap_theme
 
 test:
   commands:
