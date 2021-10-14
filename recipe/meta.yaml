@@ -1,6 +1,6 @@
 {% set name = "pgrouting" %}
-{% set version = "2.6.0" %}
-{% set sha256 = "9d12c0ea5f0fe9fef5b20e455ee07fc402736ecf6b6f69098df2e18db828e502" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "eecb6a634b7bfdba0640518053a514330d468d214a8225548917fbce8a41745f" %}
 
 package:
   name: {{ name|lower }}
@@ -19,7 +19,7 @@ build:
     - cmake ..
     - make
     - make install
-  skip: True  # [win]
+  skip: true  # [win]
 
 
 requirements:
@@ -55,3 +55,4 @@ about:
 extra:
   recipe-maintainers:
     - sodre
+    - mxr-conda
